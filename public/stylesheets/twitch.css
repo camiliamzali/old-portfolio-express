@@ -1,0 +1,157 @@
+html {
+  max-width: 100%; }
+
+body {
+  margin-top: 50px;
+  background-color: #E6E0F0; }
+
+.content {
+  max-width: 75%;
+  margin: 0 auto; }
+
+.twitch-pic {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 40%;
+  max-height: 40%; }
+
+.tabbed-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 75%;
+  margin: 100px auto 0;
+  background-color: #50377F;
+  border-radius: 10px 10px 0px 0px; }
+  @media (max-width: 576px) {
+    .tabbed-box {
+      font-size: 10px; } }
+  .tabbed-box .all-tab {
+    border-right: 1px solid #fff;
+    width: 33%;
+    margin: 0;
+    border-radius: 10px 0px 0px 0px; }
+  .tabbed-box .online-tab {
+    border-right: 1px solid #fff;
+    width: 33%;
+    margin: 0;
+    color: #F8FDD2; }
+  .tabbed-box .offline-tab {
+    width: 34%;
+    margin: 0;
+    color: #AC7FB5;
+    border-radius: 0px 10px 0px 0px; }
+  .tabbed-box .center-btn {
+    border-radius: 0; }
+  .tabbed-box .active {
+    color: white;
+    background-color: #735C9D; }
+  .tabbed-box button {
+    background-color: #50377F;
+    color: #C2B6D9;
+    font-size: 50px;
+    cursor: pointer; }
+    .tabbed-box button:hover {
+      color: white; }
+    .tabbed-box button:active {
+      color: white;
+      background-color: #735C9D; }
+    .tabbed-box button:focus {
+      color: white;
+      box-shadow: none;
+      background-color: #735C9D; }
+
+.input-text {
+  border: 0;
+  height: 48px;
+  width: 90%; }
+  .input-text:focus {
+    outline: -webkit-focus-ring-color auto 0px; }
+
+.search-bar {
+  width: 80%;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  padding-left: 10px;
+  border-radius: 10px; }
+
+.active-search {
+  box-shadow: 0 0 3pt 2pt #E6E0F0; }
+
+.icon {
+  position: relative;
+  float: right;
+  padding-right: 15px;
+  padding-top: 12px; }
+
+.purple-space {
+  background-color: #735C9D;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 75%;
+  margin: auto; }
+
+.streamer-box {
+  background-color: #735C9D;
+  padding: 0;
+  margin: 0 auto 5% auto;
+  max-width: 75%;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column; }
+  .streamer-box .streamer-row {
+    display: grid;
+    grid-template-columns: 95px auto 95px;
+    grid-template-rows: 55px auto; }
+    .streamer-box .streamer-row.online {
+      order: 0;
+      cursor: pointer; }
+    .streamer-box .streamer-row.offline {
+      order: 1; }
+    .streamer-box .streamer-row.hidden {
+      display: none; }
+    .streamer-box .streamer-row .icon-box {
+      margin: 0 auto;
+      width: 55px;
+      height: 55px; }
+    .streamer-box .streamer-row .main-box {
+      color: #E6E0F0;
+      font-size: 18px;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 576px) {
+        .streamer-box .streamer-row .main-box {
+          font-size: 12px; } }
+    .streamer-box .streamer-row .status-box {
+      font-size: 18px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .streamer-box .streamer-row:nth-child(2n) {
+      background-color: #735C9D; }
+    .streamer-box .streamer-row:nth-child(2n+1) {
+      background-color: #50377F; }
+
+.livestream {
+  height: 500px; }
+
+.twitch-box {
+  margin: 0 auto; }
+
+.hidden {
+  display: none; }
+
+img.logo {
+  width: 75%;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12.5%; }
+
+/*# sourceMappingURL=twitch.css.map */
